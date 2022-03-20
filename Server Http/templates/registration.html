@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration new user</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <body>
+      <form action="/registration_function" method="POST">
+        <div class="registration_container" >
+          <h1>Registration</h1>
+          <p>Please fill in this form to create with your account.</p>
+          <hr>
+
+            <label for="username"><b>username</b></label><br><br>
+            <input type="text" placeholder="Enter Username" name="username" required><br><br>
+
+            <label for="email"><b>Email</b></label><br><br>
+            <input type="text" placeholder="Enter Email" name="email" required><br><br>
+
+            <label for="password"><b>Password</b></label><br><br>
+            <input type="password" placeholder="Enter Password" name="password" required><br><br>
+
+            <label for="repeat-password"><b>Repeat password</b></label><br><br>
+            <input type="password" placeholder="Enter Password" name="repeat-password" required><br><br>
+
+            <hr>
+          <button type="submit" class="registerbtn">Sign up</button>
+        </div>
+      </form>
+    </body>
+</html>
