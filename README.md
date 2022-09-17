@@ -40,6 +40,47 @@ Aiuta i venditori a cooperare tra loro aumentando la consapevolezza sulle loro v
 
 ![Screenshot (6)](https://user-images.githubusercontent.com/58270634/190853155-de2ff5b1-6352-42c4-a619-04ecdba90ba8.png)
 
+# Architettura
+
+1) Scaffale e prodotti:
+   Microcontrollore e fotoresistenze per rilevare gli oggetti
+   3 LED (rosso, giallo,verde) per mostrare il livello di riempimento
+   Dispaly per mostrare il prezzo attuale e il numero di oggetti rimasti!
+2) Bridge 
+     Gli scaffali di un mercante si collegano al Bridge della sua bancarella
+     Per ogni bancarella ci sarà un Bridge 
+     Collegamento wireless tra scaffale e Bridge nell’architettura finale
+     Il Bridge raccoglie i dati riguardanti il numero di oggetti e li invia al server tramite protocollo HTTP
+     Il Bridge interroga il Server per chiedere il prezzo del prodotto di uno scaffale
+     Dopo aver ottenuto dal Server il prezzo in pacchetto Json, ricava le informazioni e le invia al microcontrollore
+3) Server
+     E’ unico all’interno della fiera
+     Il server gestisce tutte le richieste che provengono dai Bridge delle bancarelle
+     Salva tutti i dati raccolti (registrazione utenti, scaffali con prezzi e numero oggetti)
+     Comunica con il mercante, il quale dal browser può osservare   lo stato dei suoi scaffali
+     Comunica con i clienti tramite server Telegram il quale a sua volta invia a questi ultimi gli sconti attivi o le informazioni utili
+     Risponde al Bridge inviando i prezzi aggiornati sulla base degli oggetti rimasti
+     Prevede l’andamento delle vendite usando l’intelligenza artificiale e mostra informazioni generali su vendite e rifornimenti
+     
+# Sistema di comunicazione BUZZ-R
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
 ![Screenshot (8)](https://user-images.githubusercontent.com/58270634/190853284-03313f8e-b009-46ea-a2f7-651205a48255.png)
 
 
