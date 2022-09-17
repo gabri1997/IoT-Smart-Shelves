@@ -95,6 +95,29 @@ Nel prototipo è stata creata una funzione per l’implementazione di questa cl
 
 ![Screenshot (24)](https://user-images.githubusercontent.com/58270634/190867894-055223ef-5d6a-4717-8669-2982cfc90ca3.png)
 
+# Sviluppi futuri 
+
+ 1) Utilizzo di sensori più sofisticati per lo scaffale, o rilevamento del numero di oggetti tramite videocamera sfruttando reti neurali come Yolo
+
+ 2) Aggiunta dell’accoppiamento automatico tra scaffali 
+ 
+ 3) Server totalmente in cloud 
+
+ 4) Applicazione proprietaria per i clienti e per i gestori
+
+ 5) Presenza di un collegamento diretto con i fornitori 
+
+ 6) Aggiunta di un Sistema di sicurezza in grado di evitare sconti illeciti 
+
+ 7) Aggiunta di previsioni più puntuali e precise, che tengano conto delle vendite in altre fiere di altre città
+
+ 8) Completamento della gestione affinità e della sezione suggerimenti includendo studi basati sui Big Data (market basket analysis applicata a scontrini dei supermercati)
+
+ 9) Aggiunta di una bacheca (nella dashboard) che permetta la comunicazione tra venditori registrati in modo da potersi accordare
+
+
+
+
 
 
 
