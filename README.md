@@ -93,8 +93,7 @@ Per essere utilizzato necessita di un dataset in cui sono presenti due specifi
 
 Nel prototipo è stata creata una funzione per l’implementazione di questa classe
 
-
-
+![Screenshot (24)](https://user-images.githubusercontent.com/58270634/190867894-055223ef-5d6a-4717-8669-2982cfc90ca3.png)
 
 
 
