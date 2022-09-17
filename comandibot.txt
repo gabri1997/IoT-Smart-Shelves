@@ -1,0 +1,4 @@
+start - Visualizzare se sono presenti offerte per il giorno attuale
+status - Visualizzare lo stato dei prodotti in vendita
+prodotti - Visualizzare tutti i prodotti con le informazioni relative al venditore e al luogo in cui si trova
+help - I comandi possibili sono /start, /status, /prodotti
