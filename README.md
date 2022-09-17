@@ -62,10 +62,12 @@ Aiuta i venditori a cooperare tra loro aumentando la consapevolezza sulle loro v
      Risponde al Bridge inviando i prezzi aggiornati sulla base degli oggetti rimasti
      Prevede l’andamento delle vendite usando l’intelligenza artificiale e mostra informazioni generali su vendite e rifornimenti
      
+     
+![Screenshot (8)](https://user-images.githubusercontent.com/58270634/190853284-03313f8e-b009-46ea-a2f7-651205a48255.png)
+     
 # Sistema di comunicazione BUZZ-R
 
-
-
+![Screenshot (10)](https://user-images.githubusercontent.com/58270634/190853599-2ef1fca0-2164-4b88-91d1-1cc39167b639.png)
 
 
 
@@ -81,7 +83,6 @@ Aiuta i venditori a cooperare tra loro aumentando la consapevolezza sulle loro v
 
 
 
-![Screenshot (8)](https://user-images.githubusercontent.com/58270634/190853284-03313f8e-b009-46ea-a2f7-651205a48255.png)
 
 
 
