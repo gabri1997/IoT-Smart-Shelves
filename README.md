@@ -69,6 +69,16 @@ Aiuta i venditori a cooperare tra loro aumentando la consapevolezza sulle loro v
 
 ![Screenshot (10)](https://user-images.githubusercontent.com/58270634/190853599-2ef1fca0-2164-4b88-91d1-1cc39167b639.png)
 
+# Schema del circuito
+
+ Microcontrollore tipo Arduino Uno
+ 3 fotoresistenze per monitorare assenza/presenza
+ 3 Led 
+ Un display LCD per mostrare il prezzo e numero di oggetti sullo scaffale
+ Driver di pilotaggio del display 
+ ![immagine](https://user-images.githubusercontent.com/58270634/190865492-a3b4833b-ee6c-41e4-9f94-b11ef5499e64.png)
+
+
 
 
 
