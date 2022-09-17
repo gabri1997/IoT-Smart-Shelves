@@ -81,9 +81,7 @@ Aiuta i venditori a cooperare tra loro aumentando la consapevolezza sulle loro v
 
 # Dashboard e app Telegram 
 
-
-
-
+![Screenshot (22)](https://user-images.githubusercontent.com/58270634/190865668-fb84a5e4-0c94-4aa3-820b-8c5f2b88f832.png)
 
 
 
