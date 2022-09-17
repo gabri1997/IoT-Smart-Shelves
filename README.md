@@ -40,6 +40,7 @@ Aiuta i venditori a cooperare tra loro aumentando la consapevolezza sulle loro v
 
 ![Screenshot (6)](https://user-images.githubusercontent.com/58270634/190853155-de2ff5b1-6352-42c4-a619-04ecdba90ba8.png)
 
+![Screenshot (8)](https://user-images.githubusercontent.com/58270634/190853284-03313f8e-b009-46ea-a2f7-651205a48255.png)
 
 
 
