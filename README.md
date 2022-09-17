@@ -77,6 +77,8 @@ Aiuta i venditori a cooperare tra loro aumentando la consapevolezza sulle loro v
  Un display LCD per mostrare il prezzo e numero di oggetti sullo scaffale
  Driver di pilotaggio del display 
  
+ ![Screenshot (21)](https://user-images.githubusercontent.com/58270634/190865459-e99f5d06-18de-457e-a22e-25c8a5d7c901.png)
+
 
 
 
