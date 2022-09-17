@@ -83,6 +83,17 @@ Aiuta i venditori a cooperare tra loro aumentando la consapevolezza sulle loro v
 
 ![Screenshot (22)](https://user-images.githubusercontent.com/58270634/190865668-fb84a5e4-0c94-4aa3-820b-8c5f2b88f832.png)
 
+# FB-Prophet
+
+Previsioni su andamento vendite future
+
+Genera grafici proiettati a un periodo temporale futuro scelto impostando il parametro period
+
+Per essere utilizzato necessita di un dataset in cui sono presenti due specifiche colonne ‘’ds, y’’
+
+Nel prototipo è stata creata una funzione per l’implementazione di questa classe
+
+
 
 
 
