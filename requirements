@@ -1,0 +1,9 @@
+python3-pip
+python-telegram-bot
+pandas
+Flask
+matplotlib
+httpstan
+pystan
+fbprophet
+

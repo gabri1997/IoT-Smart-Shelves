@@ -1,0 +1,10 @@
+python3-pip
+python-telegram-bot
+pandas
+Flask
+matplotlib
+httpstan
+pip install pystan==2.19.1.1
+python3-dev
+fbprophet
+

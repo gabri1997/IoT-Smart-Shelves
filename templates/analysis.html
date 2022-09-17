@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Statistiche</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+.hover6 img {
+height: 300px;
+width: 350px;
+-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.hover6 img:hover {
+border: 1px solid #000;
+  border-radius: 11%;
+  width: 440px;
+height: 400px;
+}
+    /* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color:  #cdcdcd;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color:  black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color:  #dcdcdc;
+}
+    </style>
+
+</head>
+
+<body bgcolor=honeydew>
+    <div class="w3-container w3-center w3-teal">
+
+        <h1><FONT size = 30>Statistiche e previsioni di vendita</FONT></h1>
+    </div>
+        <div class="navbar">
+            <a href="/{{username}}" >Home</a>
+            <a href="/gestione_scaffali/{{id_shelf}}">Gestione scaffali</a>
+            <a href="/suggerimenti/{{id_shelf}}">Suggerimenti</a>
+            <a href="/analysis/{{id_shelf}}" class="active">Statistiche</a>
+            <a href="/contatti">Contatti</a>
+            <a href="/logout">Logout</a><br><br>
+            <br><br>
+        </div>
+
+    <div class="w3-container w3-center">
+        <p>Ora puoi osservare l'andamento delle tue vendite.</p>
+        <div class="hover6">
+            <p>Previsione andamento vendite future.</p>
+            <img src="{{statistiche}}" alt="statistiche" class="center"><br><br>
+            <p>Grafico rifornimenti mensili del tuo scaffale.</p>
+            <img src="{{statistiche2}}" alt="statistiche2" class="center"><br><br>
+            <p>Grafico andamento vendite generali di pasta (mensili).</p>
+            <img src="{{statistiche3}}" alt="statistiche3" class="center"><br><br>
+            <p>Grafico andamento vendite generali di sughi (mensili).</p>
+            <img src="{{statistiche4}}" alt="statistiche4" class="center"><br><br>
+        </div>
+        </div>
+        </d>
+</body>
+</html>
