@@ -1,134 +1,108 @@
-# IoT_Smart_Shelves
-## Il progetto
-Buzz-R è un sistema per la gestione intelligente di
-   un evento fieristico
+# IoT Smart Shelves - Buzz-R
 
-Lo scopo del progetto è quello di rendere gli scaffali
-   dei mercanti oggetti intelligenti in grado di interagire e
-   cooperare tra loro
+## About the Project
 
-Ogni scaffale sarà consapevole del numero di oggetti
-   rimasti e comunicherà sia con i mercanti che con i clienti
+**Buzz-R** is an innovative system designed for smart management during trade fair events. 
 
-Utile per:
-la cooperazione tra venditori
-per massimizzare le vendite 
-evitare rimanenze e sprechi
-gestire i rifornimenti
+The goal is to transform ordinary merchant shelves into **intelligent objects** capable of interacting and cooperating with each other. Each shelf is aware of the number of items it holds and communicates this information to both merchants and customers. 
 
-# Funzionalità
-Rilevare il numero di oggetti presenti sullo scaffale
+### Key Benefits:
+- **Enhanced cooperation among vendors** to optimize sales and reduce waste.  
+- **Automated inventory management** to handle restocking efficiently.  
+- **Insights into sales trends** using Artificial Intelligence (AI).  
 
-Mostrare tramite display il numero di rimanenze e il loro prezzo
+---
 
-Notificare tramite led luminoso lo stato di riempimento dello scaffale in base a soglia stabilita dal mercante
+## Features
 
-Messa in saldo degli oggetti automatica e quindi generazione di offerte per i clienti
+1. **Item Detection**: Detects the number of products on the shelf using sensors.  
+2. **Real-Time Display**: Shows the remaining items and their price via an LCD.  
+3. **Alert System**: LED indicators notify merchants when stock levels fall below a predefined threshold.  
+4. **Automatic Discounts**: Dynamically applies discounts and generates offers for customers.  
+5. **Sales Tracking with AI**: Tracks sales trends and helps schedule restocking.  
+6. **Affinity Management**: Coordinates discounts between shelves with related products to optimize inventory.
 
-Tenere traccia dell’andamento delle vendite tramite Intelligenza Artificiale e quindi programmare i rifornimenti
+---
 
-Gestione delle affinità:
-Permette la cooperazione tra scaffali con prodotti affini, ovvero il coordinamento degli sconti di un prodotto sulla base delle scorte rimanenti dei prodotti affini
+## Target Audience
 
-# A chi potrebbe interessare BUZZ-R ?
+**Buzz-R** is designed for vendors participating in trade fairs who want to **increase sales intelligently and effortlessly**.  
 
-Buzz-R è stato realizzato per tutti i venditori di eventi fiersitici che vogliano incrementare le loro vendite in modo intelligente e senza sforzo 
+### Advantages:
+- Easy to use, requiring no prior technical knowledge.  
+- Encourages vendor cooperation, increasing awareness of sales, inventory, and customer purchase trends.
 
-Il suo utilizzo è immediato e non abbisogna di alcuna conoscienza preliminare
+![System Overview](https://user-images.githubusercontent.com/58270634/190853155-de2ff5b1-6352-42c4-a619-04ecdba90ba8.png)
 
-Aiuta i venditori a cooperare tra loro aumentando la consapevolezza sulle loro vendite, sulle scorte e sui trend di acquisti seguiti dai clienti
+---
 
-![Screenshot (6)](https://user-images.githubusercontent.com/58270634/190853155-de2ff5b1-6352-42c4-a619-04ecdba90ba8.png)
+## System Architecture
 
-# Architettura
+### 1. Shelf and Products
+- Microcontroller with photoresistors for object detection.  
+- 3 LEDs (red, yellow, green) to indicate stock levels.  
+- LCD to display the current price and remaining items.  
 
-1) Scaffale e prodotti:
-   Microcontrollore e fotoresistenze per rilevare gli oggetti
-   3 LED (rosso, giallo,verde) per mostrare il livello di riempimento
-   Dispaly per mostrare il prezzo attuale e il numero di oggetti rimasti!
-2) Bridge 
-     Gli scaffali di un mercante si collegano al Bridge della sua bancarella
-     Per ogni bancarella ci sarà un Bridge 
-     Collegamento wireless tra scaffale e Bridge nell’architettura finale
-     Il Bridge raccoglie i dati riguardanti il numero di oggetti e li invia al server tramite protocollo HTTP
-     Il Bridge interroga il Server per chiedere il prezzo del prodotto di uno scaffale
-     Dopo aver ottenuto dal Server il prezzo in pacchetto Json, ricava le informazioni e le invia al microcontrollore
-3) Server
-     E’ unico all’interno della fiera
-     Il server gestisce tutte le richieste che provengono dai Bridge delle bancarelle
-     Salva tutti i dati raccolti (registrazione utenti, scaffali con prezzi e numero oggetti)
-     Comunica con il mercante, il quale dal browser può osservare   lo stato dei suoi scaffali
-     Comunica con i clienti tramite server Telegram il quale a sua volta invia a questi ultimi gli sconti attivi o le informazioni utili
-     Risponde al Bridge inviando i prezzi aggiornati sulla base degli oggetti rimasti
-     Prevede l’andamento delle vendite usando l’intelligenza artificiale e mostra informazioni generali su vendite e rifornimenti
-     
-     
-![Screenshot (8)](https://user-images.githubusercontent.com/58270634/190853284-03313f8e-b009-46ea-a2f7-651205a48255.png)
-     
-# Sistema di comunicazione BUZZ-R
+### 2. Bridge
+- Connects all the shelves at a vendor's booth.  
+- Wireless communication between shelves and the Bridge (in the final architecture).  
+- Sends item data to the server via HTTP and receives updated prices in JSON format.  
 
-![Screenshot (10)](https://user-images.githubusercontent.com/58270634/190853599-2ef1fca0-2164-4b88-91d1-1cc39167b639.png)
+### 3. Server
+- **Centralized** for the entire fair.  
+- Manages all requests from vendor Bridges.  
+- Stores data (e.g., user registration, shelf stock, and pricing).  
+- Provides a dashboard for merchants to monitor shelves.  
+- Communicates with customers via Telegram for discounts and offers.  
+- Uses AI to predict sales trends and optimize restocking.  
 
-# Schema del circuito
+![Architecture Diagram](https://user-images.githubusercontent.com/58270634/190853284-03313f8e-b009-46ea-a2f7-651205a48255.png)
 
- Microcontrollore tipo Arduino Uno
- 3 fotoresistenze per monitorare assenza/presenza
- 3 Led 
- Un display LCD per mostrare il prezzo e numero di oggetti sullo scaffale
- Driver di pilotaggio del display 
- 
- ![Screenshot (21)](https://user-images.githubusercontent.com/58270634/190865459-e99f5d06-18de-457e-a22e-25c8a5d7c901.png)
+---
 
-# Dashboard e app Telegram 
+## Communication System
 
-![Screenshot (22)](https://user-images.githubusercontent.com/58270634/190865668-fb84a5e4-0c94-4aa3-820b-8c5f2b88f832.png)
+![Communication System](https://user-images.githubusercontent.com/58270634/190853599-2ef1fca0-2164-4b88-91d1-1cc39167b639.png)
 
-# FB-Prophet
+---
 
-Previsioni su andamento vendite future
+## Circuit Design
 
-Genera grafici proiettati a un periodo temporale futuro scelto impostando il parametro period
+- Microcontroller (e.g., Arduino Uno).  
+- 3 photoresistors for item detection.  
+- 3 LEDs (red, yellow, green) for stock level indication.  
+- LCD for displaying item count and pricing.  
+- Driver circuit for LCD operation.  
 
-Per essere utilizzato necessita di un dataset in cui sono presenti due specifiche colonne ‘’ds, y’’
+![Circuit Design](https://user-images.githubusercontent.com/58270634/190865459-e99f5d06-18de-457e-a22e-25c8a5d7c901.png)
 
-Nel prototipo è stata creata una funzione per l’implementazione di questa classe
+---
 
-![Screenshot (24)](https://user-images.githubusercontent.com/58270634/190867894-055223ef-5d6a-4717-8669-2982cfc90ca3.png)
+## Dashboard and Telegram Integration
 
-# Sviluppi futuri 
+![Dashboard and Telegram](https://user-images.githubusercontent.com/58270634/190865668-fb84a5e4-0c94-4aa3-820b-8c5f2b88f832.png)
 
- 1) Utilizzo di sensori più sofisticati per lo scaffale, o rilevamento del numero di oggetti tramite videocamera sfruttando reti neurali come Yolo
+---
 
- 2) Aggiunta dell’accoppiamento automatico tra scaffali 
- 
- 3) Server totalmente in cloud 
+## Sales Prediction with FB-Prophet
 
- 4) Applicazione proprietaria per i clienti e per i gestori
+- Predicts future sales trends using AI.  
+- Generates projected graphs for a user-defined timeframe (`period`).  
+- Requires a dataset with two columns: `ds` (date) and `y` (sales data).  
+- A custom function integrates FB-Prophet into the system.  
 
- 5) Presenza di un collegamento diretto con i fornitori 
+![Sales Prediction](https://user-images.githubusercontent.com/58270634/190867894-055223ef-5d6a-4717-8669-2982cfc90ca3.png)
 
- 6) Aggiunta di un Sistema di sicurezza in grado di evitare sconti illeciti 
+---
 
- 7) Aggiunta di previsioni più puntuali e precise, che tengano conto delle vendite in altre fiere di altre città
+## Future Developments
 
- 8) Completamento della gestione affinità e della sezione suggerimenti includendo studi basati sui Big Data (market basket analysis applicata a scontrini dei supermercati)
-
- 9) Aggiunta di una bacheca (nella dashboard) che permetta la comunicazione tra venditori registrati in modo da potersi accordare
-
-
-
-
-
-
-
-
-   
-
-
-
-
-
-
-
-
-
+1. Improved sensors or camera-based detection using neural networks (e.g., YOLO).  
+2. Automatic pairing of related shelves for better coordination.  
+3. Fully cloud-based server architecture.  
+4. Proprietary apps for customers and vendors.  
+5. Direct communication with suppliers for seamless restocking.  
+6. Security mechanisms to prevent unauthorized discounts.  
+7. Enhanced sales predictions integrating data from fairs in other cities.  
+8. A vendor communication board (dashboard) for better collaboration.  
+9. Advanced affinity management using Big Data techniques (e.g., Market Basket Analysis).  
